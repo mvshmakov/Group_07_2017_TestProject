@@ -18,4 +18,194 @@
 // (please, add new blocks in alphabetical order)
 @import "blocks/block";
 
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  line-height: 1.25;
+  font-size: 15px;
+  min-width: 900px;
 
+  .header-page {
+    width: 100%;
+    display: flex;
+
+    &__location {
+      flex: 4;
+      margin: 1.5em;
+      justify-self: flex-start;
+    }
+    &__account-settings {
+      flex: 2;
+      margin: 1.5em;
+      justify-self: flex-end;
+
+      .account {
+        display: inline-flex;
+        align-items: center;
+
+        &__nickname {
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
+
+  .content-page {
+    width: 900px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 40px 65px;
+
+    .news {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      align-items: flex-start;
+
+      &__header-time {
+        color: gray;
+      }
+      &__content {
+        .news-list {
+          list-style-type: decimal;
+        }
+      }
+      &__footer {
+
+        .currency-list {
+          display: flex;
+          flex-direction: row;
+        }
+        .currency-list__item {
+          padding: 0 0 1em 2.5em;
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+
+      &__yandex-app-name {
+        padding: 0 1em 0 0;
+      }
+
+      .search-with-icon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-form {
+
+        &__form {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        &__logo {
+          height: 100px;
+          width: 140px;
+        }
+        &__input {
+          width: 620px;
+          height: 36px;
+          border: 2px solid yellow;
+        }
+        &__submit-button {
+          padding: 0 1em 0 1em;
+          background-color: yellow;
+          height: 36px;
+        }
+      }
+    }
+
+    .widgets {
+      display: flex;
+      flex-wrap: wrap;
+
+      .widget {
+        width: 33%;
+        padding: 1.3em 1.3em 1.3em 0;
+
+        &__title {
+          padding-right: 0.2em;
+        }
+        &__text {
+          padding: 5px 5px 5px 0;
+        }
+      }
+    }
+  }
+
+  .footer-page {
+    width: 100%;
+    background-color: #f7f6f4;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-page-markup {
+      min-width: 900px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 65px;
+
+      &__block {
+        padding: 2em 2em 2em 0;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.t-link {
+  color: #0054b9;
+  text-decoration: none;
+  transition: color 0.15s ease-out;
+
+  &:hover {
+     color: red;
+   }
+}
+._gray {
+  color: gray;
+
+  &:hover {
+    color: red;
+  }
+}
+._dark {
+  color: #000;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.icon {
+
+  &__widget-icon {
+    width: 32px;
+    height: 32px;
+    margin: -15px 7px -10px;
+  }
+}
+
+._bold {
+  font-weight: bold;
+}
+
+.account-button {
+  padding: 1em;
+}
