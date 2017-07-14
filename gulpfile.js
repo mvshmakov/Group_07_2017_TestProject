@@ -69,7 +69,7 @@ gulp.task('icons', function() {
 /**
  * JS
  */
-gulp.task('js:compile', () => {
+gulp.task('js:compile', function() {
     return gulp.src(CONFIG.js.src)
         .pipe(plugins.plumber({
             errorHandler: onPlumberError

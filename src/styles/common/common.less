@@ -20,10 +20,17 @@ h1,h2,h3,h4,h5 {
     margin: 0;
 }
 
-ul, li {
+ul, ol {
     margin: 0;
     padding: 0;
+}
+
+ul li {
     list-style-type: none;
+}
+
+ol li {
+    list-style-type: decimal;
 }
 
 p {
@@ -67,4 +74,20 @@ input:focus {
 ._hide,
 ._hidden {
     display: none !important;
+}
+
+.t-link {
+    color: @blue;
+    text-decoration: none;
+    transition: color 0.15s ease-out;
+
+    &:hover {
+        color: @red;
+    }
+    &_gray {
+        color: @gray;
+    }
+    &_dark {
+        color: @black;
+    }
 }
