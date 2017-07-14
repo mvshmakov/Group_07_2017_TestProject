@@ -390,9 +390,11 @@ ol {
 }
 ul li {
   list-style-type: none;
+  padding-bottom: 5px;
 }
 ol li {
   list-style-type: decimal;
+  padding-bottom: 5px;
 }
 p {
   margin: 0;
@@ -584,6 +586,9 @@ input:focus {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.news__header {
+  padding-bottom: 10px;
+}
 .news__header-time {
   color: gray;
 }
@@ -686,6 +691,9 @@ input:focus {
 }
 .t-link_widget-text {
   padding: 10px 0 10px 0;
+}
+.t-link_footer {
+  padding-bottom: 5px;
 }
 .widget {
   width: 33%;
