@@ -10,117 +10,103 @@
     <header class="header-page">
         <div class="header-page__location">
             <div class="t-location">
-                <!--<img src="/src/images/icons/geo.svg" class="icon _location">-->
                 <a href="" class="t-link t-link_gray">
                     <span class="t-link__text">Одинцово</span>
                 </a>
             </div>
         </div>
         <div class="header-page__account-settings">
-            <span class="account-button">
-                <a href="" class="t-link t-link_dark">Настройки</a>
-            </span>
-            <span class="account-button">
-                <a href="" class="t-link t-link_dark">Почта</a>
-            </span>
-            <span class="account-button">
-                <a href="" class="t-link t-link_dark">Диск</a>
-            </span>
+            <a href="" class="t-link t-link_dark t-link_account">
+                <span class="t-link__account-text">Настройки</span>
+            </a>
+            <a href="" class="t-link t-link_dark t-link_account">
+                <span class="account-button">Почта</span>
+            </a>
+            <a href="" class="t-link t-link_dark t-link_account">
+                <span class="account-button">Диск</span>
+            </a>
             <span class="account">
                 <a href="" class="account t-link t-link_dark">
                     <span class="account__nickname">mvshmakovmv</span>
-                    <img src="/src/images/icons/avatar.png" alt="avatar" class="icon _avatar">
+                    <img src="/src/images/icons/avatar.png" alt="avatar" class="icon_avatar">
                 </a>
             </span>
         </div>
     </header>
-
     <main class="content-page">
         <section class="news">
             <header class="news__header">
                 <a class="t-link" href="#">
-                    <span class="news__header-title">Главное в СМИ</span>
+                    <span class="t-link__news-title">Главное в СМИ</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="news__header-title">Москва и Московская область</span>
+                    <span class="t-link__news-title">Москва и Московская область</span>
                 </a>
-
-                <span class="news__header-time">
-                    6 июля, четверг <a href="#" class="t-link t-link_gray">14:52</a>
-                </span>
+                <span class="news__header-time">6 июля, четверг</span>
+                <a href="#" class="t-link t-link_gray">14:52</a>
             </header>
-
             <div class="news__content">
                 <ol class="news-list">
                     <li class="news-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="news-list__item-text">
+                            <span class="t-link__news-text">
                               Кремль прокомментировал поездку Путина на лимузине «Кортеж»
                             </span>
                         </a>
                     </li>
-
                     <li class="news-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="news-list__item-text">
+                            <span class="t-link__news-text">
                               Путин освободил от должности восемь генералов МВД, МЧС и ФСИН
                             </span>
                         </a>
                     </li>
-
                     <li class="news-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="news-list__item-text">
+                            <span class="t-link__news-text">
                               Трамп: Россия дестабилизирует ситуацию в Восточной Европе
                             </span>
                         </a>
                     </li>
-
                     <li class="news-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="news-list__item-text">
+                            <span class="t-link__news-text">
                               Глава Крыма объявил об увольнении трех министров и мэра Ялты
                             </span>
                         </a>
                     </li>
-
                     <li class="news-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="news-list__item-text">
+                            <span class="t-link__news-text">
                               Siemens опровергла сообщения о поставках турбин в Крым в обход санкций
                             </span>
                         </a>
                     </li>
                 </ol>
             </div>
-
             <footer class="news__footer">
                 <div class="currency-list">
                     <div class="currency-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="currency-list__name _bold">USD ЦБ</span>
+                            <span class="t-link_currency-list _bold">USD ЦБ</span>
                         </a>
                         <span class="currency-list__rate">60,24</span>
                         <span class="currency-list__change">+0,66</span>
                     </div>
-
                     <div class="currency-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="currency-list__name _bold">EUR ЦБ</span>
+                            <span class="t-link_currency-list _bold">EUR ЦБ</span>
                         </a>
                         <span class="currency-list__rate">68,38</span>
                         <span class="currency-list__change">+0,70</span>
                     </div>
-
                     <div class="currency-list__item">
                         <a class="t-link t-link_dark" href="#">
-                            <span class="currency-list__name _bold">Нефть</span>
+                            <span class="t-link_currency-list _bold">Нефть</span>
                         </a>
                         <span class="currency-list__rate">48,50</span>
                         <span class="currency-list__change">+0,58%</span>
                     </div>
-
                     <div class="currency-list__extension">
                         <button class="t-button-ellipsis"></button>
                     </div>
@@ -128,40 +114,32 @@
             </footer>
         </section>
         <section class="search">
-            <nav class="search__yandex-apps-navigation">
+            <nav class="search__menu">
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Карты</span>
+                    <span class="t-link_search-menu">Карты</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Маркет</span>
+                    <span class="t-link_search-menu">Маркет</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Новости</span>
+                    <span class="t-link_search-menu">Новости</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Переводчик</span>
+                    <span class="t-link_search-menu">Переводчик</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Картинки</span>
+                    <span class="t-link_search-menu">Картинки</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Видео</span>
+                    <span class="t-link_search-menu">Видео</span>
                 </a>
-
                 <a class="t-link" href="#">
-                    <span class="search__yandex-app-name">Музыка</span>
+                    <span class="t-link_search-menu">Музыка</span>
                 </a>
-
                 <a class="t-link" href="#">
                     <span class="search__button-other-apps">еще</span>
                 </a>
             </nav>
-
             <div class="search-form">
                 <form class="search-form__form">
                     <img class="search-form__logo" src="/src/images/icons/logo.svg"/>
@@ -169,292 +147,286 @@
                     <button class="search-form__submit-button" type="reset">Найти</button>
                 </form>
             </div>
-
             <div class="search__footer">
               <span class="search__footer-text">
                   Найдется все, например
                   <a href="#" class="t-link t-link_gray">
-                      самая большая планета солнечной системы
+                      <span class="t-link_search-footer">самая большая планета солнечной системы</span>
                   </a>
               </span>
             </div>
         </section>
         <section class="widgets">
-            <article class="widget _weather">
+            <article class="widget widget_weather">
                 <div class="widget__header">
                     <a class="t-link" href="#">
-                        <span class="widget__title">Погода</span>
+                        <span class="t-link_widget-title">Погода</span>
                     </a>
                     <a href="" class="t-link t-link_dark _bold">
-                        <img src="/src/images/icons/weather.svg" class="icon__widget-icon">
-                        <span class="widget__title-additional-info">+18°C</span>
+                        <img src="/src/images/icons/weather.svg" class="icon_widget">
+                        <span class="t-link t-link_widget-title t-link_dark">+18°C</span>
                     </a>
                 </div>
                 <div class="widget__body">
                     <a class="t-link t-link_dark" href="#">
-                        <span class="widget__text">Ночь +11,  утро +12</span>
+                        <span class="t-link_widget-text">Ночь +11,  утро +12</span>
                     </a>
                 </div>
             </article>
-
-            <article class="widget _traffic">
+            <article class="widget widget_traffic">
                 <div class="widget__header">
                     <a href="" class="t-link">
-                        <span class="widget__title">Пробки</span>
+                        <span class="t-link_widget-title">Пробки</span>
                     </a>
                     <a class="t-link t-link_dark _bold" href="#">
-                        <img src="/src/images/icons/jams.svg" class="icon__widget-icon">
-                        <span class="widget__title-additional-info">0 баллов</span>
+                        <img src="/src/images/icons/jams.svg" class="icon_widget">
+                        <span class="t-link t-link_widget-title t-link_dark">0 баллов</span>
                     </a>
                 </div>
                 <div class="widget__body">
-                    <span class="widget__text">На дорогах свободно</span>
+                    <span class="t-link_widget-text">На дорогах свободно</span>
                 </div>
             </article>
-
-            <article class="widget _map">
+            <article class="widget widget_map">
                 <div class="widget__header">
                     <a class="t-link" href="#">
-                        <span class="widget__title _bold">Карта москвы</span>
+                        <span class="t-link_widget-title _bold">Карта москвы</span>
                     </a>
                 </div>
                 <div class="widget__body">
                     <a class="t-link t-link_dark" href="#">
-                        <span class="widget__text _bold">Метро</span>
+                        <span class="t-link_widget-text _bold">Метро</span>
                     </a>
 
                     <a class="t-link t-link_dark" href="#">
-                        <span class="widget__text _bold">Такси</span>
+                        <span class="t-link_widget-text _bold">Такси</span>
                     </a>
 
                     <a class="t-link t-link_dark" href="#">
-                        <span class="widget__text _bold">Расписания</span>
+                        <span class="t-link_widget-text _bold">Расписания</span>
                     </a>
 
                     <a class="t-link t-link_dark" href="#">
-                        <span class="widget__text _bold">Междугородние автобусы</span>
+                        <span class="t-link_widget-text _bold">Междугородние автобусы</span>
                     </a>
                 </div>
             </article>
-
-            <article class="widget _popular">
+            <article class="widget widget_popular">
                 <div class="widget__header">
                     <a class="t-link" href="#">
-                        <span class="widget__title">Посещаемое</span>
+                        <span class="t-link_widget-title">Посещаемое</span>
                     </a>
                 </div>
                 <div class="widget__body">
                     <ul class="widget__list">
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Маркет</span>
+                                <span class="t-link_widget-text _bold">Маркет</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">шуруповерты до 5000</span>
+                                <span class="t-link_widget-text ">шуруповерты до 5000</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Авто.ру</span>
+                                <span class="t-link_widget-text _bold">Авто.ру</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">снижение цен на авто</span>
+                                <span class="t-link_widget-text ">снижение цен на авто</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Недвижимость</span>
+                                <span class="t-link_widget-text _bold">Недвижимость</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">ЖК Варшавское ш. 141</span>
+                                <span class="t-link_widget-text ">ЖК Варшавское ш. 141</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Работа</span>
+                                <span class="t-link_widget-text _bold">Работа</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">зарплата от 50 000 руб</span>
+                                <span class="t-link_widget-text ">зарплата от 50 000 руб</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">ЕГЭ</span>
+                                <span class="t-link_widget-text _bold">ЕГЭ</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">тесты по русскому</span>
+                                <span class="t-link_widget-text ">тесты по русскому</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Радио</span>
+                                <span class="t-link_widget-text _bold">Радио</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">для любителей шансона</span>
+                                <span class="t-link_widget-text ">для любителей шансона</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Картинки</span>
+                                <span class="t-link_widget-text _bold">Картинки</span>
                             </a>
                             —
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text ">космос и планеты</span>
+                                <span class="t-link_widget-text ">космос и планеты</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </article>
-
-            <article class="widget _tvschedule">
+            <article class="widget widget_tv-schedule">
                 <div class="widget__header">
                     <a class="t-link" href="#">
-                        <span class="widget__title">Телепрограмма</span>
+                        <span class="t-link_widget-title">Телепрограмма</span>
                     </a>
                 </div>
                 <div class="widget__body">
                     <ul class="widget__list">
                         <li class="widget__list-item">
-                            <span class="widget__text">16:20</span>
+                            <span class="t-link_widget-text">16:20</span>
 
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text t-link t-link_dark">Мужское / Женское</span>
+                                <span class="t-link_widget-text t-link t-link_dark">Мужское / Женское</span>
                             </a>
 
                             <a class="t-link t-link_gray" href="">
-                                <span class="widget__text t-link t-link_gray">Первый</span>
+                                <span class="t-link_widget-text t-link t-link_gray">Первый</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
-                            <span class="widget__text">17:00</span>
+                            <span class="t-link_widget-text">17:00</span>
 
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Сегодня</span>
+                                <span class="t-link_widget-text">Сегодня</span>
                             </a>
 
                             <a class="t-link t-link_gray" href="#">
-                                <span class="widget__text_gray">НТВ</span>
+                                <span class="t-link_widget-text">НТВ</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
-                            <span class="widget__text">18:10</span>
+                            <span class="t-link_widget-text">18:10</span>
 
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">10 самых.</span>
+                                <span class="t-link_widget-text">10 самых.</span>
                             </a>
 
-                            <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text_gray">ТВ Центр</span>
-                            </a>
-                        </li>
-
-                        <li class="widget__list-item">
-                            <span class="widget__text">19:00</span>
-
-                            <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Гадалка</span>
-                            </a>
-
-                            <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text_gray">ТВ-3</span>
+                            <a class="t-link t-link_gray" href="#">
+                                <span class="t-link_widget-text">ТВ Центр</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
-                            <span class="widget__text">19:30</span>
+                            <span class="t-link_widget-text">19:00</span>
 
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Реальные пацаны</span>
+                                <span class="t-link_widget-text">Гадалка</span>
                             </a>
 
-                            <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text_gray">ТНТ</span>
+                            <a class="t-link t-link_gray" href="#">
+                                <span class="t-link_widget-text">ТВ-3</span>
                             </a>
                         </li>
 
                         <li class="widget__list-item">
-                            <span class="widget__text">20:10</span>
+                            <span class="t-link_widget-text">19:30</span>
 
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Информационная программа</span>
+                                <span class="t-link_widget-text">Реальные пацаны</span>
                             </a>
 
+                            <a class="t-link t-link_gray" href="#">
+                                <span class="t-link_widget-text">ТНТ</span>
+                            </a>
+                        </li>
+
+                        <li class="widget__list-item">
+                            <span class="t-link_widget-text">20:10</span>
+
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text_gray">РЕН ТВ</span>
+                                <span class="t-link_widget-text">Информационная программа</span>
+                            </a>
+
+                            <a class="t-link t-link_gray" href="#">
+                                <span class="t-link_widget-text">РЕН ТВ</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </article>
-
-            <article class="widget _affiche">
+            <article class="widget widget_affiche">
                 <div class="widget__header">
                     <a class="t-link" href="#">
-                        <span class="widget__title">Афиша</span>
+                        <span class="t-link_widget-title">Афиша</span>
                     </a>
                 </div>
                 <div class="widget__body">
                     <ul class="widget__list">
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Во всем виноват енот</span>
+                                <span class="t-link_widget-text">Во всем виноват енот</span>
                             </a>
 
-                            <span class="widget__text_gray">премьера завтра</span>
+                            <span class="t-link_widget-text">премьера завтра</span>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Трансформеры: Последний...</span>
+                                <span class="t-link_widget-text">Трансформеры: Последний...</span>
                             </a>
 
-                            <span class="widget__text_gray">фантастика</span>
+                            <span class="t-link_widget-text">фантастика</span>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Гадкий я 3</span>
+                                <span class="t-link_widget-text">Гадкий я 3</span>
                             </a>
 
-                            <span class="widget__text_gray">мультфильм</span>
+                            <span class="t-link_widget-text">мультфильм</span>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Тачки 3</span>
+                                <span class="t-link_widget-text">Тачки 3</span>
                             </a>
 
-                            <span class="widget__text_gray">мультфильм</span>
+                            <span class="t-link_widget-text">мультфильм</span>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text">Синяя бездна</span>
+                                <span class="t-link_widget-text">Синяя бездна</span>
                             </a>
 
-                            <span class="widget__text_gray">ужасы</span>
+                            <span class="t-link_widget-text">ужасы</span>
                         </li>
 
                         <li class="widget__list-item">
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Концерты -</span>
+                                <span class="t-link_widget-text _bold">Концерты -</span>
                             </a>
                             <a class="t-link t-link_dark" href="#">
-                                <span class="widget__text _bold">Hurts</span>
+                                <span class="t-link_widget-text _bold">Hurts</span>
                             </a>
                         </li>
                     </ul>
@@ -462,71 +434,69 @@
             </article>
         </section>
     </main>
-
     <footer class="footer-page">
-        <!--<div class="footer-page__inner _page-delimiter">-->
         <div class="footer-page__inner">
             <div class="footer-page__block">
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Дзен — персональная лента публикаций</span>
+                    <span class="t-link_footer">Дзен — персональная лента публикаций</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Видео — популярные ролики</span>
+                    <span class="t-link_footer">Видео — популярные ролики</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">ТВ онлайн — эфир любимых каналов</span>
+                    <span class="t-link_footer">ТВ онлайн — эфир любимых каналов</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Телепередачи — архив лучших выпусков</span>
-                </a>
-            </div>
-
-            <div class="footer-page__block">
-                <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Директ</span>
-                </a>
-
-                <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Метрика</span>
-                </a>
-
-                <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Реклама</span>
-                </a>
-
-                <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Касса</span>
+                    <span class="t-link_footer">Телепередачи — архив лучших выпусков</span>
                 </a>
             </div>
 
             <div class="footer-page__block">
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Вакансии</span>
+                    <span class="t-link_footer">Директ</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Блог</span>
+                    <span class="t-link_footer">Метрика</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Компания</span>
+                    <span class="t-link_footer">Реклама</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">About</span>
+                    <span class="t-link_footer">Касса</span>
                 </a>
             </div>
 
             <div class="footer-page__block">
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Помощь</span>
+                    <span class="t-link_footer">Вакансии</span>
                 </a>
 
                 <a class="t-link t-link_gray" href="#">
-                    <span class="footer-page__item">Обратная связь</span>
+                    <span class="t-link_footer">Блог</span>
+                </a>
+
+                <a class="t-link t-link_gray" href="#">
+                    <span class="t-link_footer">Компания</span>
+                </a>
+
+                <a class="t-link t-link_gray" href="#">
+                    <span class="t-link_footer">About</span>
+                </a>
+            </div>
+
+            <div class="footer-page__block">
+                <a class="t-link t-link_gray" href="#">
+                    <span class="t-link_footer">Помощь</span>
+                </a>
+
+                <a class="t-link t-link_gray" href="#">
+                    <span class="t-link_footer">Обратная связь</span>
                 </a>
             </div>
         </div>
