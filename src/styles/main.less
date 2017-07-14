@@ -1,33 +1,38 @@
-//normalize
+/* normalize */
 @import (less) "common/normalize.css";
 
-// Common
+/* Common */
 @import "common/colors";
 @import "common/common";
 @import "common/fonts";
 @import "common/icons";
 @import "common/vars";
 
-// Blocks
-// (please, add new blocks in alphabetical order)
+/* Blocks */
+/* (please, add new blocks in alphabetical order) */
+@import "blocks/account/account";
+@import "blocks/account/account-button";
+
 @import "blocks/page";
-@import "blocks/account";
 @import "blocks/header-page";
 @import "blocks/content-page";
 @import "blocks/footer-page";
-@import "blocks/news";
-@import "blocks/news/news-list";
 @import "blocks/currency-list";
-@import "blocks/search/search-form";
-@import "blocks/search/search-with-icon";
-@import "blocks/search/search";
-@import "blocks/widgets/widgets";
-@import "blocks/widgets/widget";
-@import "blocks/account-button";
 @import "blocks/icon";
 
+@import "blocks/news/news";
+@import "blocks/news/news-list";
+
+@import "blocks/search/search";
+@import "blocks/search/search-form";
+@import "blocks/search/search-with-icon";
+
+@import "blocks/widgets/widget";
+@import "blocks/widgets/widgets";
+
+/* Media */
 @media (max-width: 700px) {
   .page { }
 }
-//span обернуть в а, при этом инкапсулировать все объекты
+//<span> оборачивать в <а>, при этом инкапсулировать все объекты
 //модификаторы сделать локальными

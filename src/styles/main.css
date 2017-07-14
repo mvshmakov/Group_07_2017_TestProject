@@ -1,3 +1,4 @@
+/* normalize */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -356,6 +357,7 @@ td,
 th {
   padding: 0;
 }
+/* Common */
 /* Colors */
 * {
   -webkit-box-sizing: border-box;
@@ -458,6 +460,25 @@ input:focus {
   font-weight: 700;
   font-style: normal;
 }
+._bold {
+  font-weight: bold;
+}
+/* Blocks */
+/* (please, add new blocks in alphabetical order) */
+.account {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.account__nickname {
+  padding-right: 0.5em;
+}
+.account-button {
+  padding: 1em;
+}
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,17 +495,6 @@ input:focus {
   line-height: 1.25;
   font-size: 15px;
   min-width: 900px;
-}
-.account {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.account__nickname {
-  padding-right: 0.5em;
 }
 .header-page {
   width: 100%;
@@ -561,6 +571,23 @@ input:focus {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.currency-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.currency-list__item {
+  padding: 5px 5px 5px 0;
+}
+.icon__widget-icon {
+  width: 32px;
+  height: 32px;
+  margin: -15px 7px -10px;
+}
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,17 +608,36 @@ input:focus {
 .news-list {
   list-style-type: decimal;
 }
-.currency-list {
+.search {
+  margin-left: -280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px 0 20px 0;
 }
-.currency-list__item {
-  padding: 5px 5px 5px 0;
+.search__yandex-app-name {
+  padding: 0 1em 0 0;
+}
+.search__yandex-apps-navigation {
+  margin-left: 140px;
+}
+.search__footer {
+  margin-left: 140px;
+}
+.search-form {
+  margin: -20px 0 -20px 0;
 }
 .search-form__form {
   display: -webkit-box;
@@ -627,32 +673,15 @@ input:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-.search {
-  margin-left: -280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.widget {
+  width: 33%;
+  padding: 1.3em 1.3em 1.3em 0;
 }
-.search__yandex-app-name {
-  padding: 0 1em 0 0;
+.widget__title {
+  padding-right: 0.2em;
 }
-.search__yandex-apps-navigation {
-  margin-left: 140px;
-}
-.search__footer {
-  margin-left: 140px;
+.widget__text {
+  padding: 5px 5px 5px 0;
 }
 .widgets {
   display: -webkit-box;
@@ -661,24 +690,4 @@ input:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.widgets .widget {
-  width: 33%;
-  padding: 1.3em 1.3em 1.3em 0;
-}
-.widgets .widget__title {
-  padding-right: 0.2em;
-}
-.widgets .widget__text {
-  padding: 5px 5px 5px 0;
-}
-.icon__widget-icon {
-  width: 32px;
-  height: 32px;
-  margin: -15px 7px -10px;
-}
-._bold {
-  font-weight: bold;
-}
-.account-button {
-  padding: 1em;
-}
+/* Media */
