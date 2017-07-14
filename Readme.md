@@ -4,3 +4,7 @@
 
 - npm i
 - gulp
+
+Yandex Example markup:
+
+![alt text](YandexExample.png)
