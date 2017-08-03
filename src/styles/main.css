@@ -496,19 +496,8 @@ input:focus {
 .footer-page {
   width: 100%;
   background-color: #f7f6f4;
-  min-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .footer-page__inner {
-  min-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +507,9 @@ input:focus {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  max-width: 900px;
   padding-left: 65px;
+  margin: auto;
 }
 .footer-page__block {
   padding: 2em 2em 2em 0;
@@ -537,9 +528,9 @@ input:focus {
   display: flex;
 }
 .header-page__location {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   margin: 1.5em;
   justify-self: flex-start;
 }
